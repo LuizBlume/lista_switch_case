@@ -6,8 +6,22 @@
 
     //ENTRADA
 
+    const numero = Number(prompt("Informe um número:").trim().replace(".", ","));
     
     //PROCESSAMENTO
+
+    switch (numero % 2) {
+        case 0:
+        alert("Seu número é par!");
+        break;
+
+        case 1:
+        alert("Seu número é impar!");
+        break;
+
+        default:
+        alert("Opção inválida.");
+    }
 
     
     //SAÍDA
